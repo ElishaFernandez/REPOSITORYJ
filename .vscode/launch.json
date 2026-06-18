@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "recipes",
+            "request": "launch",
+            "mainClass": "Basic_Structure_and_Syntax.recipes",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
+            "name": "variables",
+            "request": "launch",
+            "mainClass": "Basic_Structure_and_Syntax.variables",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
             "name": "HelloWorld",
             "request": "launch",
             "mainClass": "Basic_Structure_and_Syntax.HelloWorld",
