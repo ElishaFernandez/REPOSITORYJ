@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DataType",
+            "request": "launch",
+            "mainClass": "Basic_Structure_and_Syntax.DataType",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
+            "name": "dataType",
+            "request": "launch",
+            "mainClass": "Basic_Structure_and_Syntax.dataType",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
             "name": "recipes",
             "request": "launch",
             "mainClass": "Basic_Structure_and_Syntax.recipes",
