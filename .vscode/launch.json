@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "divideandConquer",
+            "request": "launch",
+            "mainClass": "Algorithm.divideandConquer",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
             "name": "DataType",
             "request": "launch",
             "mainClass": "Basic_Structure_and_Syntax.DataType",
