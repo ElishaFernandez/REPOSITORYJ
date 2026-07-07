@@ -40,6 +40,6 @@ public class increment {
         int e = 60;
         System.out.println(c);
         System.out.println(e);
-        System.out.println("combined operation:" + (c / e++)); // 60/60
+        System.out.println("combined operation:" + ((++c + e++) * 2)); // (61 + 60) * 2
     }
 }
