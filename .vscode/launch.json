@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "activity",
+            "request": "launch",
+            "mainClass": "Operators.activity",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
+            "name": "increment",
+            "request": "launch",
+            "mainClass": "Operators.increment",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
+            "name": "operator",
+            "request": "launch",
+            "mainClass": "Operators.operator",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
             "name": "divideandConquer",
             "request": "launch",
             "mainClass": "Algorithm.divideandConquer",
