@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "increment",
+            "request": "launch",
+            "mainClass": "increment",
+            "projectName": "REPOSITORYJ_34bf34ff"
+        },
+        {
+            "type": "java",
             "name": "activity",
             "request": "launch",
             "mainClass": "Operators.activity",
