@@ -6,10 +6,38 @@
     "configurations": [
         {
             "type": "java",
+<<<<<<< HEAD
             "name": "increment",
             "request": "launch",
             "mainClass": "increment",
             "projectName": "REPOSITORYJ_34bf34ff"
+=======
+            "name": "UserProfileScanner",
+            "request": "launch",
+            "mainClass": "Operators.UserProfileScanner",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Operators.Main",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
+            "name": "Comparison",
+            "request": "launch",
+            "mainClass": "Operators.Comparison",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
+            "name": "assignment",
+            "request": "launch",
+            "mainClass": "Operators.assignment",
+            "projectName": "REPOSITORYJ_d6682bc9"
+>>>>>>> 057ca51f606855140844ae20ec51f8984deea929
         },
         {
             "type": "java",
