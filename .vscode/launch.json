@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UserProfileScanner",
+            "request": "launch",
+            "mainClass": "Operators.UserProfileScanner",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Operators.Main",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
+            "name": "Comparison",
+            "request": "launch",
+            "mainClass": "Operators.Comparison",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
             "name": "assignment",
             "request": "launch",
             "mainClass": "Operators.assignment",
