@@ -1,61 +1,79 @@
 package Program;
 
 public class program {
-        //if
+
     public static void main(String[] args) {
-        int number = 10;
 
-        if (number > 0) {
-            System.out.println("The number is positive.");
-        }
+        System.out.println("===FOOD ORDERING SYSTEM===");
+     
 
-        //ifelse
-         int negative = -5;
+        String food = "Burger";
+        int DiningOption = 2;
+        int quantity = 3;
+        int menuChoice = 2;
+        int price = 300;
+        int total = price * quantity;
 
-        if (negative > 10){
-            System.out.println("The number is greater than 10.");
-
-        } else {
-            System.out.println("The number is not greater than 10.");
-        }
-        //ifthenelseifEx
-         int whole = 15;
-
-        if (whole > 20) {
-            System.out.println("The number is greater than 20.");
-        } else if (whole > 10) {
-            System.out.println("The number is greater than 10 but less than or equal to 20.");
-        } else {
-            System.out.println("The number is less than or equal to 10.");
-        }
-        //switch
-          int menuChoice = 3;
-        String menuName;
-        menuName = "Not Available";
+        // SWITCH
         switch (menuChoice) {
             case 1:
-                menuName = "Adobo";
+                food = "Adobo";
                 break;
             case 2:
-                menuName = "Sinigang";
+                food = "Burger";
                 break;
             case 3:
-                menuName = "Batchoy";
+                food = "Pizza";
                 break;
             case 4:
-                menuName = "Tinola";
+                food = "Fried Chicken";
                 break;
             case 5:
-                menuName = "Kare-kare";
-                break;
-            case 6:
-                menuName = "Pancit";
+                food = "Spaghetti";
                 break;
             default:
-                menuName = "Not Available";
+                food = "Not Available";
         }
 
-        System.out.println("The menu item is: " + menuName);
-    }
+        System.out.println("===Order Details===");
+        System.out.println("Food Ordered   :" + food);
+        System.out.println("Price          :" + price);
+        System.out.println("Quantity       :" + quantity);
+        System.out.println("Total Amount   :" + total);
 
+        // IF
+        System.out.println("===FREE!===");
+        if (quantity >= 3) {
+            System.out.println("Congratulations!");
+            System.out.println("You qualified for a FREE soft drink.");
+        }
+
+        // IF-ELSE
+        System.out.println("===Discount===");
+        if (total >= 500) {
+            System.out.println("Congratulations!");
+            System.out.println("You received a 10% discount.");
+        } else {
+            System.out.println("Sorry!");
+            System.out.println("Discount is not applied.");
+            System.out.println("Minimum purchase should be ₱500.");
+        }
+
+        // IF THEN ELSE IF
+        System.out.println("===Dining Option===");
+        if (DiningOption == 1) {
+            System.out.println("Dining option: Regular Seat");
+        } else if (DiningOption == 2) {
+            System.out.println("Dining option: Premium Seat");
+        } else if (DiningOption == 3) {
+            System.out.println("Dining option: VIP Seat");
+        } else {
+            System.out.println("Dining option: Take Out");
+        }
+
+     
+        System.out.println("===Thank you for your order!===");
+        System.out.println("===Enjoy your meal!===");
+      
+    }
 }

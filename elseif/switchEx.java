@@ -1,4 +1,4 @@
-package Switch;
+package elseif;
 
 public class switchEx {
     

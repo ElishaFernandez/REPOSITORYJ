@@ -1,4 +1,4 @@
-package elseif
+package elseif;
 
 public class ifEx {
     public static void main(String[] args) {
