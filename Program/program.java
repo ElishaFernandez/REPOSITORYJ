@@ -4,54 +4,47 @@ public class program {
 
     public static void main(String[] args) {
 
-        System.out.println("===FOOD ORDERING SYSTEM===");
-
-        String food = "Burger";
-        int quantity = 3;
         int menuChoice = 2;
-        int price = 300;
-        int total = price * quantity;
-
+        int quantity = 3;
+        int price = 250;
+        int total = quantity * price;
+        int diningOption = 1;
 
         // SWITCH
         switch (menuChoice) {
             case 1:
-                food = "Adobo";
+                System.out.println("Food: Burger");
                 break;
             case 2:
-                food = "Burger";
+                System.out.println("Food: Pizza");
                 break;
             case 3:
-                food = "Pizza";
-                break;
-            case 4:
-                food = "Fried Chicken";
-                break;
-            case 5:
-                food = "Spaghetti";
+                System.out.println("Food: Fries");
                 break;
             default:
-                food = "Not Available";
+                System.out.println("Invalid Menu");
         }
 
-
-        System.out.println("===Order Details===");
-        System.out.println("Food Ordered : " + food);
-        System.out.println("Price        : " + price);
-        System.out.println("Quantity     : " + quantity);
-        System.out.println("Total Amount : " + total);
+        // IF
+        if (quantity > 0) {
+            System.out.println("Order Accepted");
+        }
 
         // IF-ELSE
-        System.out.println("===Discount===");
         if (total >= 500) {
-            System.out.println("Congratulations!");
-            System.out.println("You received a 10% discount.");
+            System.out.println("Free Drink");
         } else {
-            System.out.println("Sorry!");
-            System.out.println("No discount.");
+            System.out.println("No Free Drink");
         }
 
-        System.out.println("===Thank you for your order!===");
-        System.out.println("===Enjoy your meal!===");
+        // IF-ELSE IF
+        if (diningOption == 1) {
+            System.out.println("Dine In");
+        } else if (diningOption == 2) {
+            System.out.println("Take Out");
+        } else if (diningOption == 3) {
+            System.out.println("Delivery");
+        } 
+
     }
 }
