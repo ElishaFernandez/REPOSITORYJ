@@ -8,7 +8,7 @@ public class program2 {
         int quantity = 3;
         int price = 250;
         int total = quantity * price;
-        int diningOption = 1;
+        int diningOption = 1;                        
 
         // SWITCH
         switch (menuChoice) {
