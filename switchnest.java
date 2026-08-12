@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
 public class switchnest {
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         Scanner input = new Scanner(System.in);
         
         int menuChoice;
         int subChoice = 0;
-        int drinksChoice = 0;
+        int drinksChoice = 0; 
         int mainPrice = 0;
         int drinkPrice = 0;
 
