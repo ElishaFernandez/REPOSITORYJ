@@ -3,29 +3,27 @@ public class forLoop2 {
 
         int row = 5;
 
-      //TRIANGLE
-        for(int i = 1; i <= row; i++){
-            
-            for(int a = i; a <= row; a++)
+        // TRIANGLE
+        for (int i = 1; i <= row; i++) {
+
+            for (int a = i; a <= row; a++)
                 System.out.print(" ");
 
-            
-            for(int a = 1; a <= i; a++)
+            for (int a = 1; a <= i; a++)
                 System.out.print("* ");
-            
+
             System.out.println();
         }
 
-      //LEFT TRIANGLE
+        // LEFT TRIANGLE
         for (int i = 1; i <= row; i++) {
-            for (int a = 1; a <= i; a++) {
+            for (int a = 1; a <= i; a++)
                 System.out.print("* ");
-            }
 
             System.out.println();
         }
 
-        //RIGHT TRIANGLE
+        // RIGHT TRIANGLE
         for (int i = 0; i < row; i++) {
 
             for (int a = i; a <= row; a++)
