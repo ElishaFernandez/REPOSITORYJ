@@ -7,7 +7,11 @@ public class forLoop {
         // Center Triangle
         for (int i = 0; i < row; i++) {
 
+<<<<<<< HEAD
             for (int a = row - i - 1; a >= 1; a--)
+=======
+            for (int a = i ; a <= row; a++)
+>>>>>>> 8071078718cd5bdeeb1365c512bd079749a1871a
                 System.out.print(" ");
 
             for (int a = 0; a <= i; a++)
@@ -28,7 +32,11 @@ public class forLoop {
         // Right Triangle
         for (int i = 0; i < row; i++) {
 
+<<<<<<< HEAD
             for (int a = row - i - 1; a >= 1; a--)
+=======
+            for (int a = i; a <= row; a++)
+>>>>>>> 8071078718cd5bdeeb1365c512bd079749a1871a
                 System.out.print("  ");
 
             for (int a = 0; a <= i; a++)
