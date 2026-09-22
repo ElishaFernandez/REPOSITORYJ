@@ -46,7 +46,7 @@ public class switchnest {
                 switch (subChoice) {
                     case 1: mainPrice = 800; 
                     break;
-                    case 2: mainPrice = 700; 
+                    case 2: mainPrice = 700;  bffgk n
                     break;
                     case 3: mainPrice = 1000; 
                     break;
