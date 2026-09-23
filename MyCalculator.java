@@ -22,6 +22,23 @@ public class MyCalculator {
         double remainder = a % b;
         return remainder; // sends the answer back to main
     }
+    public static double average(double a, double b) {
+        double avg =  (a + b ) / 2;
+        return avg; // sends the answer back to main
+    }
+    public static double max(double a, double b) {
+        if (a > b) {
+            return a;
+        }
+        else {
+            return b;
+        }
+    }
+    public static double square(double num1) {
+        double square =  num1 * num1;
+        return square; // sends the answer back to main
+    }
+
     // STEP2 write ur subtract, multiply, divide, and modulus methods here
 
     public static void main(String[] args) {
@@ -33,6 +50,9 @@ public class MyCalculator {
         System.out.println("[3] Multiply");
         System.out.println("[4] Divide");
         System.out.println("[5] Modulus");
+        System.out.println("[6] average");
+        System.out.println("[7] max");
+        System.out.println("[8] square");
        
         //step3 add menu lines for [2] to [5] here
         System.out.print("Choose an operation: ");
@@ -62,6 +82,20 @@ public class MyCalculator {
                 }
               }  else if(choice == 5){
                 double result = modulus(num1, num2);
+                 System.out.println("Result: " + result);
+                
+              }  else if(choice == 6){
+               double result = average(num1, num2);
+                 System.out.println("Result: " + result);
+                
+              }
+               else if(choice == 7){
+               double result = max(num1, num2);
+                 System.out.println("Result: " + result);
+                
+              }
+               else if(choice == 8){
+               double result = square(num1);
                  System.out.println("Result: " + result);
                 
               }
