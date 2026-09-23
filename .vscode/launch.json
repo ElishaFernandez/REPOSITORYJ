@@ -65,6 +65,20 @@
             "name": "divideandConquer",
             "request": "launch",
             "mainClass": "Algorithm.divideandConquer",
+            "projectName": "REPOSITORYJ_f5a19ca3"
+        },
+        {
+            "type": "java",
+            "name": "recipes",
+            "request": "launch",
+            "mainClass": "Basic_Structure_and_Syntax.recipes",
+            "projectName": "REPOSITORYJ_f5a19ca3"
+        },
+        {
+            "type": "java",
+            "name": "divideandConquer",
+            "request": "launch",
+            "mainClass": "Algorithm.divideandConquer",
             "projectName": "REPOSITORYJ_d6682bc9"
         },
         {
