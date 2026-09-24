@@ -6,41 +6,58 @@ public class MyCalculator {
         double sum = a + b;
         return sum; // sends the answer back to main
     }
+
     public static double subtract(double a, double b) {
         double difference = a - b;
         return difference; // sends the answer back to main
     }
+
     public static double multiply(double a, double b) {
         double product = a * b;
         return product; // sends the answer back to main
     }
+
     public static double divide(double a, double b) {
         double quotient = a / b;
         return quotient; // sends the answer back to main
     }
+
     public static double modulus(double a, double b) {
         double remainder = a % b;
         return remainder; // sends the answer back to main
     }
+
     public static double average(double a, double b) {
-        double avg =  (a + b ) / 2;
+        double avg = (a + b) / 2;
         return avg; // sends the answer back to main
     }
+
     public static double max(double a, double b) {
         if (a > b) {
             return a;
-        }
-        else {
+        } else {
             return b;
         }
     }
+
     public static double square(double num1) {
-        double square =  num1 * num1;
+        double square = num1 * num1;
         return square; // sends the answer back to main
     }
 
-    // STEP2 write ur subtract, multiply, divide, and modulus methods here
+    public static double min(double a, double b) {
+        if (a < b) {
+            return a;
+        } else {
+            return b;
+        }
+    }
 
+    public static double percentage(double number, double percent) {
+        double result = (number * percent) / 100;
+        return result;
+    }
+    
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -53,57 +70,64 @@ public class MyCalculator {
         System.out.println("[6] average");
         System.out.println("[7] max");
         System.out.println("[8] square");
-       
-        //step3 add menu lines for [2] to [5] here
+        System.out.println("[9] min");
+        System.out.println("[10] percentage");
+     
         System.out.print("Choose an operation: ");
-            int choice = input.nextInt();
+        int choice = input.nextInt();
         System.out.print("Enter first number: ");
-            double num1 = input.nextDouble();
-             System.out.print("Enter second number: ");
-            double num2 = input.nextDouble();
+        double num1 = input.nextDouble();
+        System.out.print("Enter second number: ");
+        double num2 = input.nextDouble();
 
-            if (choice == 1)  {
-                double result = add(num1, num2); //num1 & num2 are the ARGUMENTS
-                System.out.println("Result: " + result);
-            }  else  if(choice == 2){
-                double result = subtract(num1, num2);
+        if (choice == 1) {
+            double result = add(num1, num2); // num1 & num2 are the ARGUMENTS
+            System.out.println("Result: " + result);
+        } else if (choice == 2) {
+            double result = subtract(num1, num2);
+            System.out.println("Result: " + result);
+        } else if (choice == 3) {
+            double result = multiply(num1, num2);
+            System.out.println("Result: " + result);
+        } else if (choice == 4) {
+            if (num2 == 0)
+                System.out.println("Error: Cannot divide by zero.");
+            else {
+                double result = divide(num1, num2);
                 System.out.println("Result: " + result);
             }
-              else if(choice == 3){
-                double result = multiply(num1, num2);
-                 System.out.println("Result: " + result);
-              }
-                else if(choice == 4){
-                if (num2 == 0)
-                    System.out.println("Error: Cannot divide by zero.");
-                else {
-                    double result = divide(num1, num2);
-                    System.out.println("Result: " + result);   
-                }
-              }  else if(choice == 5){
-                double result = modulus(num1, num2);
-                 System.out.println("Result: " + result);
-                
-              }  else if(choice == 6){
-               double result = average(num1, num2);
-                 System.out.println("Result: " + result);
-                
-              }
-               else if(choice == 7){
-               double result = max(num1, num2);
-                 System.out.println("Result: " + result);
-                
-              }
-               else if(choice == 8){
-               double result = square(num1);
-                 System.out.println("Result: " + result);
-                
-              }
-              else {
-                System.out.println("Invalid Choice");
-             }
-            input.close();
-          
+        } else if (choice == 5) {
+            double result = modulus(num1, num2);
+            System.out.println("Result: " + result);
+
+        } else if (choice == 6) {
+            double result = average(num1, num2);
+            System.out.println("Result: " + result);
+
+        } else if (choice == 7) {
+            double result = max(num1, num2);
+            System.out.println("Result: " + result);
+
+        } else if (choice == 8) {
+            double result = square(num1);
+            System.out.println("Result: " + result);
 
         }
+
+        else if (choice == 9) {
+            double result = min(num1, num2);
+            System.out.println("Result: " + result);
+
+        }
+
+        else if (choice == 10) {
+            double result = percentage(num1, num2);
+            System.out.println("Result: " + result);
+
+        } else {
+            System.out.println("Invalid Choice");
+        }
+        input.close();
+
+    }
 }
