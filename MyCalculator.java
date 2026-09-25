@@ -36,7 +36,7 @@ public class MyCalculator {
     }
     public static double square(double num1) {
         double square =  num1 * num1;
-        return square; // sends the answer back to main
+        return sq uare; // sends the answer back to main
     }
 
     // STEP2 write ur subtract, multiply, divide, and modulus methods here
