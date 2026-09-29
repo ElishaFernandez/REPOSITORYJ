@@ -41,13 +41,11 @@ public class MyCalculator {
     }
 
     public static double square(double num1) {
-<<<<<<< HEAD
-        double square =  num1 * num1;
-        return sq uare; // sends the answer back to main
-=======
+
+
         double square = num1 * num1;
         return square; // sends the answer back to main
->>>>>>> af9cd7961fd87b0c5a8e4a026af54ff9b06bca11
+
     }
 
     public static double min(double a, double b) {
