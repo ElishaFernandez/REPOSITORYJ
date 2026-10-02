@@ -6,12 +6,20 @@
     "configurations": [
         {
             "type": "java",
-<<<<<<< HEAD
+            "name": "CoffeeShop",
+            "request": "launch",
+            "mainClass": "CoffeeShop",
+            "projectName": "REPOSITORYJ_d6682bc9"
+        },
+        {
+            "type": "java",
             "name": "increment",
             "request": "launch",
             "mainClass": "increment",
             "projectName": "REPOSITORYJ_34bf34ff"
-=======
+        },
+        {
+            "type": "java",
             "name": "UserProfileScanner",
             "request": "launch",
             "mainClass": "Operators.UserProfileScanner",
@@ -37,7 +45,6 @@
             "request": "launch",
             "mainClass": "Operators.assignment",
             "projectName": "REPOSITORYJ_d6682bc9"
->>>>>>> 057ca51f606855140844ae20ec51f8984deea929
         },
         {
             "type": "java",
