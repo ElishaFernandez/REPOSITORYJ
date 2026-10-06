@@ -1,20 +1,23 @@
 public class App {
-   
     
-    public static void main(String[] args) {
-        Tao lalaki = new Tao();
-        Anak anak = new Anak();
-        lalaki.pangalan = "Christian";
-        lalaki.edad = 25;
-        System.out.println("Pangalan: " + lalaki.pangalan);
-        System.out.println("Edad: " + lalaki.edad);
-        System.out.println("Ang iyong password ay: " + lalaki.getPassword());
-        lalaki.maglakad();
-        lalaki.magsalita();
-        System.out.println("Password: " + lalaki.getPassword());
-        anak.maglakad();
-        anak.magsalita();
-        System.out.println("Password: " + anak.getPassword());
+    public static void main(String[] args) throws Exception {
 
+        Tao tambay = new Tao();
+        tambay.maglakad();
+        Tao Anak = new Anak();
+        Anak.maglakad();
+        // Tao lalake = new Tao();
+        // Anak panganay = new Anak();
+        // panganay.pangalan = "Pedro";
+        // panganay.maglakad();
+        // System.out.println("ang pangalan ng panganay ay " + panganay.pangalan);
+        
+        // lalake.pangalan = "Juan";
+        // lalake.edad = 25;
+        // lalake.setPassword("secret123");
+        // System.out.println("Hello World" + lalake.pangalan + " " + lalake.edad);
+        // System.out.println("ang iyong password ay " + lalake.getpassword());
+        // lalake.maglakad();
+        // lalake.magsalita();
     }
 }

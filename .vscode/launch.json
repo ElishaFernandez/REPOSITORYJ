@@ -9,6 +9,13 @@
             "name": "App",
             "request": "launch",
             "mainClass": "App",
+            "projectName": "REPOSITORYJ_34bf34ff"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
             "projectName": "REPOSITORYJ_d6682bc9"
         },
         {
