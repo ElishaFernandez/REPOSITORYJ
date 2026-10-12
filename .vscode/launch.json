@@ -9,7 +9,11 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "Pillars.Main",
+<<<<<<< HEAD
             "projectName": "REPOSITORYJ_d6682bc9"
+=======
+            "projectName": "REPOSITORYJ_34bf34ff"
+>>>>>>> 3a3d1281100b2ff13b2f1bf1eccd53c5bacd5cb5
         },
         {
             "type": "java",
