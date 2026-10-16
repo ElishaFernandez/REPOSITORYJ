@@ -12,4 +12,9 @@ public class Bus extends Vehicle{
   public int getSeats() {
     return seats;
   }
+
+  @Override
+  public double computeFare(double km) {
+    return 15.00 + (km * 2.50);
+  }
 }

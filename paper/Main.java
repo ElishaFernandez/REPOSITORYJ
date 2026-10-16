@@ -1,6 +1,6 @@
 package paper;
+import java.util.Scanner;
 
-public class Main {
 //     public static void main(String[] args) {
 // //     Tricycle tricycle = new Tricycle("TRC 456", "Kuya Ben");
     
@@ -69,21 +69,76 @@ public class Main {
 // System.out.println("Done.");
 
 // }
-import java.io.File;
+// import java.io.File;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
+// public class Main {
+
+// public static void main(String[] args) {
+
+// Scanner file = new Scanner(new File("drivers.txt"));
+
+// while (file.hasNextLine()) {
+
+// System.out.println("Driver: " +  file.nextLine());
+
+// file.close();
+//     }
+// }
+// import java.io.File;
+// import java.io.FileNotFoundException;
+// import java.util.Scanner;
+// public class Main {
+// // throws: "I might fail with this. Whoever calls me must handle it."
+// static void printDrivers(String fileName) throws FileNotFoundException {
+// Scanner file = new Scanner(new File(fileName));
+// while (file.hasNextLine()) {
+// System.out.println("Driver: " + file.nextLine());
+// }
+// file.close();
+// }
+// public static void main(String[] args) {
+// Jeepney jeep = new Jeepney("NXA 123", "Mang Ramon", "Monumento-Divisoria");
+// try {
+// if (-3 < 0) {
+// throw new IllegalArgumentException("Passenger count cannot be negative: -3");
+// }
+// // the setter THROWS now
+// jeep.showInfo();
+// // skipped
+// } catch (IllegalArgumentException e) {
+// System.out.println("Rejected: " + e.getMessage());
+// }
+// try {
+// printDrivers("paper/drivers.txt");
+// // the caller handles it
+// } catch (FileNotFoundException e) {
+// System.out.println("Missing file: " + e.getMessage());
+// }
+// }
 public class Main {
-
 public static void main(String[] args) {
-
-Scanner file = new Scanner(new File("drivers.txt"));
-
-while (file.hasNextLine()) {
-
-System.out.println("Driver: " +  file.nextLine());
-
-file.close();
-    }
+Jeepney jeep = new Jeepney("NXA 123", "Mang Ramon", "Monumento-Divisoria");
+Tricycle trike = new Tricycle("TRC 456", "Kuya Ben", "Bagong Silang TODA");
+try {
+jeep.board(15);
+jeep.showInfo();
+jeep.board(10);
+// 15 + 10 = 25, more than 20
+jeep.showInfo();
+// skipped
+} catch (OverloadException e) {
+System.out.println("Cannot board: " + e.getMessage());
+}
+try {
+System.out.println("Fare: P" + trike.quoteFare(-2));
+} catch (InvalidDistanceException e) {
+System.out.println("Cannot quote: " + e.getMessage());
+} finally {
+System.out.println("Trip log saved.");
 }
 }
+}
+
+

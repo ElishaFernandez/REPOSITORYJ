@@ -1,6 +1,6 @@
 package paper;
 
-public class Vehicle {
+public abstract class Vehicle {
     private String plateNumber;
     private String driverName;
     private int passenger;
@@ -26,17 +26,33 @@ public class Vehicle {
 
     public void setPassenger(int passengers)
     {
-        if (passenger >= 0) {
-            this.passenger = passengers;
+        if (passenger < 0) {
+            throw new IllegalArgumentException("Passenger count cannot be negative: " + passengers);
         } else {
-            System.out.println("Invalid passenger count.");
+            this.passenger = passengers;
         }
     }
-    public double computeFare(double km) {
-        return 13.00;
-    }
+     
+    public abstract double computeFare(double km);
 
     public void showInfo() {
         System.out.println(plateNumber + "Driver:" + driverName + " passengers: " + passenger );
     }
+
+    // CHECKED: the header must say "throws OverloadException"
+public void board(int count) throws OverloadException {
+if (passengers + count > getCapacity()) {
+throw new OverloadException(plateNumber + " is full! Capacity "
++ getCapacity() + ", but " + (passengers + count) + " tried to ride.");
+}
+passengers = passengers + count;
+}
+// UNCHECKED: no "throws" needed in the header
+public double quoteFare(double km) {
+if (km <= 0) {
+throw new InvalidDistanceException("Distance must be more than 0 km, got " + km);
+}
+return computeFare(km);
+// polymorphism: each vehicle's own formula
+}
 }

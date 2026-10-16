@@ -12,4 +12,9 @@ package paper;
   public String getToda() {
     return toda;
   }
+
+  @Override
+  public double computeFare(double km) {
+    return 20.00 + (km * 10.00);
+  }
 }
