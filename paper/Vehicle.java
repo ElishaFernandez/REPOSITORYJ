@@ -36,23 +36,27 @@ public abstract class Vehicle {
     public abstract double computeFare(double km);
 
     public void showInfo() {
-        System.out.println(plateNumber + "Driver:" + driverName + " passengers: " + passenger );
+       System.out.println(plateNumber + ": Driver: " + driverName + " Passengers: " + passenger + "/" + getCapacity());
     }
 
-    // CHECKED: the header must say "throws OverloadException"
-public void board(int count) throws OverloadException {
-if (passengers + count > getCapacity()) {
-throw new OverloadException(plateNumber + " is full! Capacity "
-+ getCapacity() + ", but " + (passengers + count) + " tried to ride.");
-}
-passengers = passengers + count;
-}
-// UNCHECKED: no "throws" needed in the header
-public double quoteFare(double km) {
-if (km <= 0) {
-throw new InvalidDistanceException("Distance must be more than 0 km, got " + km);
-}
-return computeFare(km);
-// polymorphism: each vehicle's own formula
-}
-}
+public abstract int getCapacity();
+
+
+ //CHECKED: the header must say "throws OverloadException"
+ public void board(int count) throws OverloadException {
+ if (passenger + count > getCapacity()) {
+ throw new OverloadException(plateNumber + " is full! Capacity "
+ + getCapacity() + ", but " + (passenger + count) + " tried to ride.");
+ }
+ passenger = passenger + count;
+ }
+  //UNCHECKED: no "throws" needed in the header
+ public double quoteFare(double km) throws InvalidDistanceException {
+ if (km <= 0) {
+   throw new InvalidDistanceException("Distance must be more than 0 km, got " + km);
+ }
+ return computeFare(km);  //polymorphism: each vehicle's own formula
+ 
+ }
+ }
+

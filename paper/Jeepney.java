@@ -18,4 +18,9 @@ public class Jeepney extends Vehicle {
 
     return 13.00 + extra;
   }
+
+  @Override
+  public int getCapacity() {
+    return 20;
+  }
 }

@@ -17,4 +17,9 @@ package paper;
   public double computeFare(double km) {
     return 20.00 + (km * 10.00);
   }
+
+    @Override
+  public int getCapacity() {
+    return 4;
+  }
 }
